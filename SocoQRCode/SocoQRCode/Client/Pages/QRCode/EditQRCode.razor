@@ -1,0 +1,30 @@
+﻿@page "/QRCode/Edit/{QRCodeID:int}"
+@inject IQRCLRepository qrclRepository
+@inject NavigationManager navigationManager
+
+<h3>Edit QRCode</h3>
+
+@if (qrcl != null)
+{
+<FormQRCode Model="QRCL" OnValidSubmit="Edit"></FormQRCode>
+}
+
+
+@code {
+    [Parameter] public int QRCodeID { get; set; }
+
+    QRCL qrcl;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        qrcl = await qrclRepository.GetQRCode(QRCodeID);
+    }
+
+    private void Edit()
+    {
+        //Console.WriteLine("Edit QR Code
+        qrclRepository.UpdateQRCode(qrcl);
+        navigationManager.NavigateTo("QRCode/Index");
+    }
+}

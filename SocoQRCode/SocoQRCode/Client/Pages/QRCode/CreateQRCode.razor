@@ -1,0 +1,29 @@
+﻿@page "/QRCode/create"
+@inject IQRCLRepository qrclRepository
+@inject NavigationManager navigationManager
+
+<h3>Create QRCode</h3>
+
+<FormQRCode QRCL="qrcl" OnValidSubmit="Create" />
+
+@code { 
+    private QRCL qrcl = new QRCL();
+
+    private async Task Create()
+    {
+        Console.WriteLine("Create method");
+        Console.WriteLine(qrcl.ProdSerial);
+
+        try
+        {
+            await qrclRepository.CreateQRCode(qrcl);
+            navigationManager.NavigateTo("QRCode/Index");
+        }
+
+        catch (Exception ex)
+        {
+            // ...
+           Console.WriteLine("walawe");
+        }
+    }
+    }

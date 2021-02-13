@@ -1,0 +1,66 @@
+﻿@page "/QRCode"
+@page "/QRCode/Index" 
+@inject IQRCLRepository qrclRepository
+
+
+<h3>Index QRCode</h3>
+
+<div class="form-group" >
+    <a class="btn btn-info" href="/QRCode/Create"> Create QRCode</a>
+
+</div>
+
+<GenericList List="Qrcl">
+    <WholeListTemplate>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Qrcl)
+                { 
+                    <tr>
+                        <td>
+                            <a class="btn btn-success" href="/QRCode/Edit/@item.QRCodeID">Edit</a>
+                            <button class="btn btn-danger" @onclick="@(() => DeleteQRCode(item.QRCodeID))" > Delete</button>
+                        </td>
+                        <td>@item.ProdSerial</td>
+                        <td>@item.ProdDescp</td>                 
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </WholeListTemplate>
+</GenericList>
+
+@code {
+
+    List<QRCL> Qrcl;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Qrcl = await qrclRepository.GetQRCode();
+
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+
+        }
+
+    }
+
+    private async Task DeleteQRCode(int Id)
+    {
+
+        await qrclRepository.DeleteQRCode(Id);
+        Qrcl = await qrclRepository.GetQRCode();
+    }
+
+}

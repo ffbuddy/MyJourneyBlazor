@@ -1,0 +1,36 @@
+﻿<EditForm Model="QRCL" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label for="name">Product Serial</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@QRCL.ProdSerial" />
+            <ValidationMessage For="@(() =>QRCL.ProdSerial)" />
+        </div>
+
+        <label for="name">Product Description</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@QRCL.ProdDescp" />
+            <ValidationMessage For="@(()=> QRCL.ProdDescp)"></ValidationMessage>
+        </div>
+        <label for="name"> Date Created </label>
+        <div>
+            <InputDate class="form-control" @bind-Value="@QRCL.DateCreated" />
+            <ValidationMessage For="@(()=>QRCL.DateCreated)" />
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="btn-btn-primary">Submit</button>
+        <button type="submit" class="btn-secondary">Print</button>
+        <button type="submit" class="btn-secondary">Submit & Print</button>
+    </div>
+
+
+</EditForm>
+
+
+@code {
+
+    [Parameter] public QRCL QRCL { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+
+}

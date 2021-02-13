@@ -1,0 +1,15 @@
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\bin\Debug\net5.0\SocoQRCode.Shared.deps.json
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\bin\Debug\net5.0\SocoQRCode.Shared.dll
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\bin\Debug\net5.0\ref\SocoQRCode.Shared.dll
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\bin\Debug\net5.0\SocoQRCode.Shared.pdb
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.csprojAssemblyReference.cache
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.AssemblyInfoInputs.cache
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.AssemblyInfo.cs
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.dll
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\ref\SocoQRCode.Shared.dll
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.pdb
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\bin\Debug\net5.0\SocoQRCode.Shared.runtimeconfig.json
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\bin\Debug\net5.0\SocoQRCode.Shared.runtimeconfig.dev.json
+C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Shared\obj\Debug\net5.0\SocoQRCode.Shared.genruntimeconfig.cache

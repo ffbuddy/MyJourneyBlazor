@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="C:\Users\ferdi\source\repos\SocoQRCode\SocoQRCode\Client\wwwroot\" />
+</StaticWebAssets>
